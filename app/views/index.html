@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduprep - Plataforma Educacional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="../../controller/tailwind.js" defer></script>
+    <link href="../views/styles/index.css" rel="stylesheet">
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-sm py-4 px-6">
+        <div class="container mx-auto flex justify-end">
+            <a id="link" class="flex items-center group">
+                <div class="mr-2 text-gray-600 group-hover:text-primary transition">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <img src="images/pngtree-user-icon-png-image_1796659-removebg-preview.png" 
+                     alt="Perfil do usuário" 
+                     class="user-icon w-10 h-10 rounded-full border-2 border-blue-100">
+            </a>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8 sm:py-12">
+        <div class="w-full max-w-4xl text-center">
+            <!-- Logo e Título -->
+            <div class="logo-container mb-10">
+                <div class="flex justify-center mb-6">
+                    <div class="bg-white p-3 rounded-2xl shadow-lg inline-block">
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 w-48 h-48 mx-auto flex items-center justify-center">
+                            <span class="text-6xl font-bold text-primary">EP</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-4">
+                    Edu<span class="text-primary">prep</span>
+                </h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Sua plataforma educacional completa para videoaulas e materiais de estudo
+                </p>
+            </div>
+
+            <!-- Botões de Ação -->
+            <div class="buttons-container flex flex-col sm:flex-row justify-center gap-6 mt-16">
+                <a href="materiais/video.html" 
+                   class="btn-custom bg-primary hover:bg-secondary text-white font-bold py-5 px-8 rounded-xl text-lg flex items-center justify-center transition-all">
+                    <i class="fas fa-play-circle text-2xl mr-3"></i>
+                    Videoaulas
+                </a>
+                
+                <a href="materiais/apostilas.html" 
+                   class="btn-custom bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-bold py-5 px-8 rounded-xl text-lg flex items-center justify-center transition-all">
+                    <i class="fas fa-book-open text-2xl mr-3"></i>
+                    Apostilas
+                </a>
+            </div>
+
+            <!-- Recursos Adicionais -->
+            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-blue-50">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Aprendizado Personalizado</h3>
+                    <p class="text-gray-600">Conteúdos adaptados ao seu nível de conhecimento e objetivos educacionais.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-blue-50">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Professores Qualificados</h3>
+                    <p class="text-gray-600">Equipe de educadores especialistas em preparação para vestibulares e ENEM.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md border border-blue-50">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-line text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Acompanhamento de Progresso</h3>
+                    <p class="text-gray-600">Monitore seu desenvolvimento e identifique áreas que precisam de mais atenção.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gradient-to-r from-primary to-secondary text-white py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <div class="bg-white w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                            <span class="text-primary font-bold text-xl">E</span>
+                        </div>
+                        <span class="text-2xl font-bold">Eduprep</span>
+                    </div>
+                    <p class="mt-2 text-blue-100 max-w-md">
+                        Transformando a educação através de tecnologia e conteúdos de qualidade.
+                    </p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center hover:bg-blue-400 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-400 flex items-center justify-center hover:bg-blue-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center hover:bg-pink-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-blue-700 flex items-center justify-center hover:bg-blue-600 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-300 mt-8 pt-6 text-center text-blue-100">
+                <p>&copy; 2023 Eduprep. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../controller/index.js" defer></script>
+</body>
+</html>

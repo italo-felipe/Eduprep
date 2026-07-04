@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Eduprep</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="../../controller/users/cadastro.js" defer></script>
+    <script src="../../server_user.js" defer></script>
+    <script src="../../controller/tailwind.js" defer></script>
+    <link rel="stylesheet" href="../styles/user.css">
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-md">
+        <!-- Logo -->
+        <div class="text-center mb-8">
+            <a href="../index.html">
+                <div class="mx-auto bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 flex items-center justify-center mb-4">
+                    <span class="text-blue-500 text-xl font-bold">LOGO</span>
+                </div>
+                <h1 class="text-3xl font-bold text-primary">Eduprep</h1>
+            </a>
+        </div>
+
+        <!-- Card de cadastro -->
+        <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <div class="p-2 bg-primary"></div>
+            <div class="p-8">
+                <div class="text-center mb-6">
+                    <h2 class="text-2xl font-bold text-gray-800">Cadastro</h2>
+                    <p class="text-gray-600 mt-1">Crie sua conta para continuar</p>
+                </div>
+                
+                <form id="form" method="POST">
+                    <div class="mb-4">
+                        <label for="nome" class="block text-gray-700 font-medium mb-2">Nome*</label>
+                        <input type="text" id="nome" name="nome" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-medium mb-2">E-mail*</label>
+                        <input type="email" id="email" name="email" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-medium mb-2">Senha*</label>
+                        <input type="password" id="password" name="password" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label for="password_repeat" class="block text-gray-700 font-medium mb-2">Confirmar Senha*</label>
+                        <input type="password" id="password_repeat" name="password_repeat" required 
+                               class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+                        <i class="fas fa-user-plus mr-2"></i>Cadastrar
+                    </button>
+                </form>
+                
+                <div class="mt-6 text-center">
+                    <p class="text-gray-600">Já possui conta? 
+                        <a href="user.html" class="text-primary font-semibold hover:text-secondary transition">Faça login</a>
+                    </p>
+                </div>
+                
+                <div id="alert" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

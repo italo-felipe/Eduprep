@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+}
+.video-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(37, 99, 235, 0.2);
+}
+.video-player {
+    aspect-ratio: 16/9;
+}
+.btn {
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    transform: translateY(-3px);
+}
+.btn:active {
+    transform: translateY(1px);
+}
+.comment-card {
+    border-left: 4px solid #3b82f6;
+}
